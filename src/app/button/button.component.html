@@ -1,5 +1,4 @@
-<div id="button">
-  <button type="button" class="btn" (click)="onClickButton($event)" [disabled]="disabled">
-    {{ label }}
+ <button type="button" class="btn" (click)="onClickButton($event)" [disabled]="disabled">
+   <span *ngIf="icon">test</span>
+   <span>{{ label }}</span>
   </button>
-</div>
