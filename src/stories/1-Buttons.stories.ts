@@ -1,21 +1,12 @@
-import {Button} from '@storybook/angular/demo';
+import {moduleMetadata, storiesOf} from '@storybook/angular';
+import {ButtonsModule} from '../app/buttons/buttons.module';
+import {ButtonsComponent} from '../app/buttons/buttons.component';
 
-export default {
-  title: 'Buttons',
-  component: Button,
-};
-
-
-export const BaseButton = () => ({
-  component: Button,
-  props: {
-    text: 'Button',
-  },
-});
-
-export const DisabledButton = () => ({
-  component: Button,
-  props: {
-    text: 'Disabled button',
-  },
-});
+storiesOf('Buttons', module)
+  .addDecorator(moduleMetadata({ imports: [ ButtonsModule ]}))
+  .add('Basic Button', () => ({
+    component: ButtonsComponent,
+    props: {
+      Score: 0
+    },
+  }))
