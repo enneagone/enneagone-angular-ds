@@ -50,19 +50,19 @@ More informations: https://angular.io/cli/generate
 Create a *../src/stories/name-of-your-component.stories.js* file, and write your story like this:
 
 ```
-import { Button } from '../app/button/button.component.ts'; // Import your component
+import {moduleMetadata, storiesOf} from '@storybook/angular';
+import {ButtonsModule} from '../app/buttons/buttons.module';
+import {ButtonsComponent} from '../app/buttons/buttons.component';
 
-export default {
-  title: 'Buttons',
-  component: Button,
-};
+storiesOf('Buttons', module)
+  .addDecorator(moduleMetadata({ imports: [ ButtonsModule ]}))
+  .add('Basic Button', () => ({
+    component: ButtonsComponent,
+    props: {
+      Score: 0
+    },
+  }))
 
-export const BaseButton = () => ({
-  component: Button,
-  props: {
-    text: 'Button',
-  },
-});
 ```
 
 More informations: https://storybook.js.org/docs/guides/guide-angular/
