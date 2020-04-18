@@ -36,7 +36,39 @@ jobs:
           name: Test
           command: yarn test
 
-  build:
+  prettier:
+    executor: node
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - <<: *save_cache
+      - run:
+          name: Prettify
+          command: yarn format:check
+
+  linter:
+    executor: node
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - <<: *save_cache
+      - run:
+          name: Lint
+          command: yarn lint
+
+  build-library:
+    executor: node
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: Build
+          command: yarn build
+
+  build-storybook:
     executor: node
     steps:
       - checkout
@@ -50,7 +82,7 @@ jobs:
           paths:
             - storybook-static
 
-  deploy:
+  deploy-storybook:
     executor: node
     steps:
       - checkout
@@ -65,15 +97,48 @@ jobs:
           name: Deploy to Netlify
           command: netlify deploy --dir=./storybook-static -p
 
+  deploy-library:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: Write npmrc
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - run:
+          name: Publish package
+          command: yarn publish
+
 workflows:
   version: 2
   build_and_deploy:
     jobs:
-#      - test
-      - build
-      - deploy:
+      - prettier
+      - linter
+      - test:
           requires:
-            - build
+            - linter
+            - prettier
+      - build-storybook
+#          requires:
+#            - test
+      - build-library
+#          requires:
+#            - test
+      - deploy-storybook:
+          requires:
+            - build-storybook
 #          filters:
 #            branches:
 #              only: master
+      - deploy-library:
+          requires:
+            - build-library
+          filters:
+            tags:
+              only: /^v.*/
+#              branches:
+#                only: master

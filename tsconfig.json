@@ -14,7 +14,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "button": [
+        "dist/button/button",
+        "dist/button"
+      ],
+      "enneagone-angular-ds": [
+        "dist/enneagone-angular-ds/enneagone-angular-ds",
+        "dist/enneagone-angular-ds"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
