@@ -1,11 +1,11 @@
-# ProjectE9DsApp
+# # EnneagoneAngularDs
 
-Design system for Alexandrie project based on Material library.
+Design system for Alexandrie project.
 
 Storybook: https://gracious-einstein-69a213.netlify.app  
 Notions: https://www.notion.so/Angular-project-228ddbb744174f91afedb34e45046ea1  
 Figma: https://www.figma.com/file/5LsJ7igbnjAzjgDQpLlXk6/Alexandrie?node-id=0%3A1  
-Design system scheme: 
+Design system color scheme: 
 
 ## Installation
 
@@ -23,23 +23,20 @@ sudo apt-get update && sudo apt-get install yarn
 yarn global add @angular/cli
 ```
 
-
 ## Commands
 
-Start application:
-```
-yarn start
-```
 Launch Storybook:  
+
 ```
 yarn storybook
 ```
+
 ## Create a component
 
 #### Generate a new angular component:  
 
 ```
-ng generate component name-of-your-component
+ng g lib name-of-your-component -p ui 
 ```
 
 More informations: https://angular.io/cli/generate
@@ -62,7 +59,13 @@ storiesOf('Buttons', module)
       Score: 0
     },
   }))
-
 ```
 
 More informations: https://storybook.js.org/docs/guides/guide-angular/
+
+## Deploy to npm
+
+Don't forget to add a tag for the version:
+```
+git tag v0.1.0
+```

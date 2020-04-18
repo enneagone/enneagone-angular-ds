@@ -2,3 +2,13 @@ package.json
 package-lock.json
 yarn.lock
 dist
+.circleci
+storybook-static
+README.md
+tsconfig.json
+tslint.json
+angular.json
+.storybook
+
+src
+projects
