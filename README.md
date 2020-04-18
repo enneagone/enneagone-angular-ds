@@ -2,9 +2,9 @@
 
 Design system for Alexandrie project based on Material library.
 
-Storybook:  
+Storybook: https://gracious-einstein-69a213.netlify.app  
 Notions: https://www.notion.so/Angular-project-228ddbb744174f91afedb34e45046ea1  
-Figma:  https://www.figma.com/file/5LsJ7igbnjAzjgDQpLlXk6/Alexandrie?node-id=0%3A1  
+Figma: https://www.figma.com/file/5LsJ7igbnjAzjgDQpLlXk6/Alexandrie?node-id=0%3A1  
 Design system scheme: 
 
 ## Installation
