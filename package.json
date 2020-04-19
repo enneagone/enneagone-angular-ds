@@ -1,6 +1,6 @@
 {
   "name": "enneagone-angular-ds",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
@@ -41,6 +41,7 @@
     "@types/node": "^12.11.1",
     "babel-loader": "^8.1.0",
     "codelyzer": "^5.1.2",
+    "husky": "^4.2.5",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.4.1",
