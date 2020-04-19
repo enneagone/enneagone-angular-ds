@@ -121,8 +121,8 @@ jobs:
       - <<: *restore_cache
       - <<: *install_node_modules
       - run:
-        name: Write npmrc
-        command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          name: Write npmrc
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run:
           name: release
           command: yarn release || true
@@ -149,18 +149,18 @@ workflows:
           filters:
             branches:
               only: master
-#      - deploy-library:
-#          requires:
-#            - build-library
-#          filters:
-#            tags:
-#              only: /^*/
-#              branches:
-#                only: master
       - release:
           requires:
             - build-library
 #         filters:
+#            tags:
+#              only: /^*/
+#              branches:
+#                only: master
+#      - deploy-library:
+#          requires:
+#            - build-library
+#          filters:
 #            tags:
 #              only: /^*/
 #              branches:
