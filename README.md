@@ -4,8 +4,7 @@ Design system for Alexandrie project.
 
 Storybook: https://gracious-einstein-69a213.netlify.app  
 Notions: https://www.notion.so/Angular-project-228ddbb744174f91afedb34e45046ea1  
-Figma: https://www.figma.com/file/5LsJ7igbnjAzjgDQpLlXk6/Alexandrie?node-id=0%3A1  
-Design system color scheme: 
+Figma: https://www.figma.com/file/5LsJ7igbnjAzjgDQpLlXk6/Alexandrie?node-id=0%3A1 
 
 ## Installation
 
@@ -36,10 +35,16 @@ yarn storybook
 #### Generate a new angular component:  
 
 ```
-ng generate component name-of-your-component --project=enneagone-angular-ds 
+ng generate component name-of-your-component --project=enneagone-angular-ds --skip-import 
 ```
 
 More informations: https://angular.io/cli/generate
+
+Add it to the public-api.ts:
+```
+export * from './lib/name-of-folder-component/name-of-your-component.component';
+export * from './lib/name-of-folder-component/name-of-your-component.module';
+```
 
 #### Integrate it to Storybook:
 

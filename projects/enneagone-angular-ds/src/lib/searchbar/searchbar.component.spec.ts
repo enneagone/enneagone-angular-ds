@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EnneagoneAngularDsComponent } from './enneagone-angular-ds.component';
+import { SearchbarComponent } from './searchbar.component';
 
-describe('EnneagoneAngularDsComponent', () => {
-  let component: EnneagoneAngularDsComponent;
-  let fixture: ComponentFixture<EnneagoneAngularDsComponent>;
+describe('SearchbarComponent', () => {
+  let component: SearchbarComponent;
+  let fixture: ComponentFixture<SearchbarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EnneagoneAngularDsComponent ]
+      declarations: [ SearchbarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EnneagoneAngularDsComponent);
+    fixture = TestBed.createComponent(SearchbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
