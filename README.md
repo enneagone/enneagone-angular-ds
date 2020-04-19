@@ -87,3 +87,4 @@ git tag v0.1.0
 ```
 
 Increment version in package.json
+
