@@ -97,20 +97,20 @@ jobs:
           name: Deploy to Netlify
           command: netlify deploy --dir=./storybook-static -p
 
-  deploy-library:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ./
-      - <<: *restore_cache
-      - <<: *install_node_modules
-      - run:
-          name: Write npmrc
-          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-      - run:
-          name: Publish package
-          command: yarn publish
+#  deploy-library:
+#    executor: node
+#    steps:
+#      - checkout
+#      - attach_workspace:
+#          at: ./
+#      - <<: *restore_cache
+#      - <<: *install_node_modules
+#      - run:
+#          name: Write npmrc
+#          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+#      - run:
+#          name: Publish package
+#          command: yarn publish
 
   release:
     executor: node
@@ -120,6 +120,9 @@ jobs:
           at: ./
       - <<: *restore_cache
       - <<: *install_node_modules
+      - run:
+        name: Write npmrc
+        command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run:
           name: release
           command: yarn release || true
@@ -146,9 +149,9 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy-library:
-          requires:
-            - build-library
+#      - deploy-library:
+#          requires:
+#            - build-library
 #          filters:
 #            tags:
 #              only: /^*/
@@ -156,7 +159,7 @@ workflows:
 #                only: master
       - release:
           requires:
-            - deploy-library
+            - build-library
 #         filters:
 #            tags:
 #              only: /^*/

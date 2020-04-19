@@ -8,6 +8,12 @@ const releaseTemplate = readFileSync(
 module.exports = {
   plugins: [
     [
+      '@semantic-release/npm',
+      {
+        npmPublish: true,
+      },
+    ],
+    [
       'semantic-release-gitmoji',
       {
         releaseRules: {
