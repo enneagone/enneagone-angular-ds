@@ -112,6 +112,18 @@ jobs:
           name: Publish package
           command: yarn publish
 
+  release:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: release
+          command: yarn release || true
+
 workflows:
   version: 2
   build_and_deploy:
@@ -131,13 +143,21 @@ workflows:
       - deploy-storybook:
           requires:
             - build-storybook
-#          filters:
-#            branches:
-#              only: master
+          filters:
+            branches:
+              only: master
       - deploy-library:
           requires:
             - build-library
 #          filters:
+#            tags:
+#              only: /^*/
+#              branches:
+#                only: master
+      - release:
+          requires:
+            - deploy-library
+#         filters:
 #            tags:
 #              only: /^*/
 #              branches:
