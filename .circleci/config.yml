@@ -123,11 +123,11 @@ workflows:
             - linter
             - prettier
       - build-storybook
-#          requires:
-#            - test
+          requires:
+            - test
       - build-library
-#          requires:
-#            - test
+          requires:
+            - test
       - deploy-storybook:
           requires:
             - build-storybook
@@ -139,6 +139,6 @@ workflows:
             - build-library
           filters:
             tags:
-              only: /^*/
+#              only: /^*/
 #              branches:
 #                only: master
