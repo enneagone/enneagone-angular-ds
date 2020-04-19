@@ -43,21 +43,33 @@ More informations: https://angular.io/cli/generate
 
 #### Integrate it to Storybook:
 
+Build the library to use internally:
+```
+yarn build enneagone-angular-ds
+```
+
+Pack it to a tarball:
+```
+yarn pack
+```
+
+Add the tarball library to the package.json:
+```
+yarn add file:enneagone-angular-ds-v0.0.2.tgz
+```
 
 Create a *../src/stories/name-of-your-component.stories.js* file, and write your story like this:
 
 ```
-import {moduleMetadata, storiesOf} from '@storybook/angular';
-import {ButtonsModule} from '../app/buttons/buttons.module';
-import {ButtonsComponent} from '../app/buttons/buttons.component';
+import { storiesOf } from '@storybook/angular';
+import { ButtonComponent } from 'enneagonne-angular-ds'; <-- Import component from the library
 
-storiesOf('Buttons', module)
-  .addDecorator(moduleMetadata({ imports: [ ButtonsModule ]}))
-  .add('Basic Button', () => ({
-    component: ButtonsComponent,
+storiesOf('button', module)
+  .add('basic', () => ({
+    component: ButtonComponent,
     props: {
-      Score: 0
-    },
+      text: 'hello'
+    }
   }))
 ```
 
@@ -69,3 +81,5 @@ Don't forget to add a tag for the version:
 ```
 git tag v0.1.0
 ```
+
+Increment version in package.json
