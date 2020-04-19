@@ -42,46 +42,6 @@
           }
         }
       }
-    },
-    "enneagone-angular-ds": {
-      "projectType": "library",
-      "root": "projects/enneagone-angular-ds",
-      "sourceRoot": "projects/enneagone-angular-ds/src",
-      "prefix": "ui",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/enneagone-angular-ds/tsconfig.lib.json",
-            "project": "projects/enneagone-angular-ds/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/enneagone-angular-ds/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/enneagone-angular-ds/src/test.ts",
-            "tsConfig": "projects/enneagone-angular-ds/tsconfig.spec.json",
-            "karmaConfig": "projects/enneagone-angular-ds/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/enneagone-angular-ds/tsconfig.lib.json",
-              "projects/enneagone-angular-ds/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }},
   "defaultProject": "enneagone-angular-ds"
 }
