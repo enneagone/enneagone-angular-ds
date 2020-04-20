@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/enneagone/enneagone-angular-ds.svg?style=svg)](https://circleci.com/gh/enneagone/enneagone-angular-ds)
+
 # # EnneagoneAngularDs
 
 Design system for Alexandrie project.
