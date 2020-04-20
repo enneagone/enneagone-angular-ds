@@ -9,6 +9,8 @@ tsconfig.json
 tslint.json
 angular.json
 .storybook
+.github
+CHANGELOG.md
 
 src
 projects
