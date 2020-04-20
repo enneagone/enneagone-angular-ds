@@ -5,7 +5,7 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './e9-btn.component.html',
   styleUrls: ['./e9-btn.component.css']
 })
-export class E9Btn implements OnInit {
+export class E9BtnComponent implements OnInit {
   @Input() label: string;
   constructor() { }
 

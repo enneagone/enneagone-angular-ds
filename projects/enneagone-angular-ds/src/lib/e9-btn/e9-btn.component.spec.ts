@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { E9Btn } from './e9-btn.component';
+import { E9BtnComponent } from './e9-btn.component';
 
-describe('E9Btn', () => {
-  let component: E9Btn;
-  let fixture: ComponentFixture<E9Btn>;
+describe('E9BtnComponent', () => {
+  let component: E9BtnComponent;
+  let fixture: ComponentFixture<E9BtnComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ E9Btn ]
+      declarations: [ E9BtnComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(E9Btn);
+    fixture = TestBed.createComponent(E9BtnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
