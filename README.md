@@ -81,10 +81,38 @@ More informations: https://storybook.js.org/docs/guides/guide-angular/
 
 ## Deploy to npm
 
-Don't forget to add a tag for the version:
-```
-git tag v0.1.0
-```
+Npm deployement is automatical and it follow a gitmoji convention in commit message:
 
-Increment version in package.json
+### Increment Major version(breaking change):
+
+* :boom:
+
+### Increment Minor version(feat):
+
+* :sparkles:
+
+### Increment Patch version:
+
+* :bug:
+* :ambulance:
+* :lipstick:
+* :lock:
+* :zap:
+* :apple:
+* :penguin:
+* :checkered_flag:
+* :robot:
+* :green_apple:
+* :chart_with_upwards_trend:
+* :globe_with_meridians:
+* :alien:
+* :wheelchair:
+* :loud_sound:
+* :mute:
+* :mag:
+* :children_crossing:
+* :speech_balloon:
+* :iphone:
+* :pencil2:
+* :bento:
 
