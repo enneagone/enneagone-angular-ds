@@ -97,21 +97,6 @@ jobs:
           name: Deploy to Netlify
           command: netlify deploy --dir=./storybook-static -p
 
-#  deploy-library:
-#    executor: node
-#    steps:
-#      - checkout
-#      - attach_workspace:
-#          at: ./
-#      - <<: *restore_cache
-#      - <<: *install_node_modules
-#      - run:
-#          name: Write npmrc
-#          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-#      - run:
-#          name: Publish package
-#          command: yarn publish
-
   release:
     executor: node
     steps:
@@ -155,5 +140,5 @@ workflows:
           filters:
             tags:
               only: /^*/
-              branches:
-                only: master
+            branches:
+              only: master
