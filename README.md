@@ -81,7 +81,7 @@ More informations: https://storybook.js.org/docs/guides/guide-angular/
 
 ## Deploy to npm
 
-Npm deployement is automatical and it follow a gitmoji convention in commit message:
+Npm deployement is automatical on master and it follow a gitmoji convention in commit message:
 
 ### Increment Major version(breaking change):
 
