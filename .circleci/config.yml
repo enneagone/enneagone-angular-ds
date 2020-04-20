@@ -152,16 +152,8 @@ workflows:
       - release:
           requires:
             - build-library
-#         filters:
-#            tags:
-#              only: /^*/
-#              branches:
-#                only: master
-#      - deploy-library:
-#          requires:
-#            - build-library
-#          filters:
-#            tags:
-#              only: /^*/
-#              branches:
-#                only: master
+          filters:
+            tags:
+              only: /^*/
+              branches:
+                only: master
