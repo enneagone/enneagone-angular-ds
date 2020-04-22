@@ -5,6 +5,8 @@ storiesOf('Button', module)
   .add('basic', () => ({
     component: E9BtnComponent,
     props: {
-      label: 'test'
+      label: 'test',
+      type: 'button',
+      disable: true
     }
   }));
