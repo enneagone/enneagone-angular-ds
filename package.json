@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
+    "build": "ng build enneagone-angular-ds --prod",
     "test": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "format:check": "prettier --list-different .",
