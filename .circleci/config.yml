@@ -109,8 +109,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - <<: *restore_cache
-      - <<: *install_node_modules
       - run:
           name: Write npmrc
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
