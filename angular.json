@@ -1,40 +1,40 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "enneagone-angular-ds": {
+    "enneagone-angular-ds-lib": {
       "projectType": "library",
-      "root": "projects/enneagone-angular-ds",
-      "sourceRoot": "projects/enneagone-angular-ds/src",
-      "prefix": "ui",
+      "root": "projects/enneagone-angular-ds-lib",
+      "sourceRoot": "projects/enneagone-angular-ds-lib/src",
+      "prefix": "e9",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/enneagone-angular-ds/tsconfig.lib.json",
-            "project": "projects/enneagone-angular-ds/ng-package.json"
+            "tsConfig": "projects/enneagone-angular-ds-lib/tsconfig.lib.json",
+            "project": "projects/enneagone-angular-ds-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/enneagone-angular-ds/tsconfig.lib.prod.json"
+              "tsConfig": "projects/enneagone-angular-ds-lib/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/enneagone-angular-ds/src/test.ts",
-            "tsConfig": "projects/enneagone-angular-ds/tsconfig.spec.json",
-            "karmaConfig": "projects/enneagone-angular-ds/karma.conf.js"
+            "main": "projects/enneagone-angular-ds-lib/src/test.ts",
+            "tsConfig": "projects/enneagone-angular-ds-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/enneagone-angular-ds-lib/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/enneagone-angular-ds/tsconfig.lib.json",
-              "projects/enneagone-angular-ds/tsconfig.spec.json"
+              "projects/enneagone-angular-ds-lib/tsconfig.lib.json",
+              "projects/enneagone-angular-ds-lib/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -43,5 +43,5 @@
         }
       }
     }},
-  "defaultProject": "enneagone-angular-ds"
+  "defaultProject": "enneagone-angular-ds-lib"
 }

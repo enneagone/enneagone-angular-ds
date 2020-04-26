@@ -11,7 +11,7 @@ module.exports = {
       '@semantic-release/npm',
       {
         npmPublish: true,
-        pkgRoot: 'dist/enneagone-angular-ds',
+        pkgRoot: 'dist/enneagone-angular-ds-lib',
       },
     ],
     [
