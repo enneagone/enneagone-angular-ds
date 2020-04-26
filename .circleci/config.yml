@@ -67,6 +67,12 @@ jobs:
       - run:
           name: Build
           command: yarn build
+      - store_artifacts:
+          path: /
+      - persist_to_workspace:
+          root: /
+          paths:
+            - dist
 
 #  build-storybook:
 #    executor: node
