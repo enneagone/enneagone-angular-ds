@@ -7,7 +7,9 @@
     "build": "ng build --project=enneagone-angular-ds-lib --prod",
     "test": "ng test",
     "lint": "ng lint",
+    "format:check": "prettier --list-different .",
     "e2e": "ng e2e",
+    "release": "semantic-release",
     "pack_lib": "cd dist/enneagone-angular-ds-lib && yarn pack"
   },
   "private": true,
