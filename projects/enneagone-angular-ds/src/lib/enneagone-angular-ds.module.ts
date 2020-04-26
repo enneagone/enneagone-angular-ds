@@ -9,4 +9,4 @@ import { ButtonComponent } from './button/button.component';
   ],
   exports: [ButtonComponent]
 })
-export class EnneagoneAngularDsLibModule { }
+export class EnneagoneAngularDsModule { }

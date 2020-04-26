@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "enneagone-angular-ds-lib": [
-        "dist/enneagone-angular-ds-lib/enneagone-angular-ds-lib",
-        "dist/enneagone-angular-ds-lib"
+      "enneagone-angular-ds": [
+        "dist/enneagone-angular-ds/enneagone-angular-ds",
+        "dist/enneagone-angular-ds"
       ]
     }
   },

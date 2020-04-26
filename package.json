@@ -4,13 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --project=enneagone-angular-ds-lib --prod",
+    "build": "ng build --project=enneagone-angular-ds --prod",
     "test": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "format:check": "prettier --list-different .",
     "e2e": "ng e2e",
     "release": "semantic-release",
-    "pack_lib": "cd dist/enneagone-angular-ds-lib && yarn pack"
+    "pack_lib": "cd dist/enneagone-angular-ds && yarn pack"
   },
   "private": true,
   "dependencies": {
@@ -55,10 +55,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }

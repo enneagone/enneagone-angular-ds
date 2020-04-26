@@ -1,5 +1,5 @@
 {
-  "name": "enneagone-angular-ds-lib",
+  "name": "enneagone-angular-ds",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
