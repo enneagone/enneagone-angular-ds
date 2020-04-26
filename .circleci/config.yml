@@ -74,34 +74,34 @@ jobs:
           paths:
             - dist
 
-#  build-storybook:
-#    executor: node
-#    steps:
-#      - checkout
-#      - <<: *restore_cache
-#      - <<: *install_node_modules
-#      - run:
-#          name: Build
-#          command: yarn build-storybook
-#      - persist_to_workspace:
-#          root: ./
-#          paths:
-#            - storybook-static
+  build-storybook:
+    executor: node
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: Build
+          command: yarn build-storybook
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - storybook-static
 
-#  deploy-storybook:
-#    executor: node
-#    steps:
-#      - checkout
-#      - attach_workspace:
-#          at: ./
-#      - <<: *restore_cache
-#      - <<: *install_node_modules
-#      - run:
-#          name: Install netlify-cli
-#          command: sudo npm install -g --silent netlify-cli
-#      - run:
-#          name: Deploy to Netlify
-#          command: netlify deploy --dir=./storybook-static -p
+  deploy-storybook:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: Install netlify-cli
+          command: sudo npm install -g --silent netlify-cli
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --dir=./storybook-static -p
 
   release:
     executor: node
@@ -128,18 +128,18 @@ workflows:
           requires:
             - linter
             - prettier
-#      - build-storybook:
-#          requires:
-#            - test
+      - build-storybook:
+          requires:
+            - test
       - build-library:
           requires:
             - test
-#      - deploy-storybook:
-#          requires:
-#            - build-storybook
-#          filters:
-#            branches:
-#              only: master
+      - deploy-storybook:
+          requires:
+            - build-storybook
+          filters:
+            branches:
+              only: master
       - release:
           requires:
             - build-library
