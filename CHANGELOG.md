@@ -1,3 +1,9 @@
+# [v1.2.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.1.6...v1.2.0) (2020-04-26)
+
+## ✨ New Features
+
+- [`2e16ab2`](https://github.com/enneagone/enneagone-angular-ds/commit/2e16ab2)  add story book
+
 # [v1.1.6](https://github.com/enneagone/enneagone-angular-ds/compare/v1.1.5...v1.1.6) (2020-04-26)
 
 ## 🐛 Bug Fixes
