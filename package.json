@@ -10,7 +10,7 @@
     "format:check": "prettier --list-different .",
     "e2e": "ng e2e",
     "release": "semantic-release",
-    "pack_lib": "cd dist/enneagone-angular-ds && yarn pack"
+    "pack_lib": "cd dist/enneagone-angular-dsb && yarn pack"
   },
   "private": true,
   "dependencies": {
@@ -49,11 +49,17 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "ng-packagr": "^9.0.0",
     "prettier": "2.0.4",
+    "pretty-quick": "^2.0.1",
     "protractor": "~5.4.3",
     "semantic-release": "^17.0.6",
     "semantic-release-gitmoji": "1.3.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
