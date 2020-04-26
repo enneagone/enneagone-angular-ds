@@ -1,3 +1,18 @@
+# [v1.1.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.0.1...v1.1.0) (2020-04-26)
+
+## ✨ New Features
+
+- [`41c2f9f`](https://github.com/enneagone/enneagone-angular-ds/commit/41c2f9f)  implement button 
+- [`373a90c`](https://github.com/enneagone/enneagone-angular-ds/commit/373a90c)  new button 
+
+## 🐛 Bug Fixes
+
+- [`22e46aa`](https://github.com/enneagone/enneagone-angular-ds/commit/22e46aa)  error in architecture 
+
+## ✏️ Fixed typos
+
+- [`28d58ff`](https://github.com/enneagone/enneagone-angular-ds/commit/28d58ff)  fix ci
+
 # [v1.0.1](https://github.com/enneagone/enneagone-angular-ds/compare/v1.0.0...v1.0.1) (2020-04-20)
 
 ## 🚑 Critical Hotfixes
