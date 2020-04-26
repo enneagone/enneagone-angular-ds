@@ -68,7 +68,7 @@ jobs:
           name: Build
           command: yarn build
       - store_artifacts:
-          path: ./
+          path: ./dist
       - persist_to_workspace:
           root: ./
           paths:
