@@ -1,3 +1,9 @@
+# [v1.1.5](https://github.com/enneagone/enneagone-angular-ds/compare/v1.1.4...v1.1.5) (2020-04-26)
+
+## 🐛 Bug Fixes
+
+- [`5ae3256`](https://github.com/enneagone/enneagone-angular-ds/commit/5ae3256)  patch version
+
 # [v1.1.4](https://github.com/enneagone/enneagone-angular-ds/compare/v1.1.3...v1.1.4) (2020-04-26)
 
 ## 🐛 Bug Fixes
