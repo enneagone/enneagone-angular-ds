@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ButtonComponent } from './button/button.component';
+import { InputComponent } from './input/input.component';
 
 
 
 @NgModule({
-  declarations: [ButtonComponent],
+  declarations: [ButtonComponent, InputComponent],
   imports: [
   ],
-  exports: [ButtonComponent]
+  exports: [ButtonComponent, InputComponent]
 })
 export class EnneagoneAngularDsModule { }
