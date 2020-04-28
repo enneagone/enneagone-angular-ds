@@ -24,8 +24,8 @@ storiesOf('Button', module)
             display: flex;
             justify-content: start;
             ">
-          <e9-button class='margin-component' value='Standard' (onClick)="${displayClick()}"></e9-button>
-          <e9-button class='margin-component' value='Disable' disabled="true" (onClick)="${displayClick()}"></e9-button>
+          <e9-button class='margin-component' value='Standard' (btnClick)="${displayClick()}"></e9-button>
+          <e9-button class='margin-component' value='Disable' disabled="true" (btnClick)="${displayClick()}"></e9-button>
         </div>
     `,
   }));
