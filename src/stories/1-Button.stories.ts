@@ -1,16 +1,31 @@
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import {ButtonComponent} from '../../projects/enneagone-angular-ds/src/public-api';
+import {storiesOf} from '@storybook/angular';
 
-import { ButtonComponent } from '../../projects/enneagone-angular-ds/src/public-api';
+
+import '../styles.css';
+
+function displayClick() {
+  action('button clicked');
+}
 
 export default {
   title: 'Button',
   component: ButtonComponent,
 };
 
-export const Text = () => ({
-  component: ButtonComponent,
-  props: {
-    text: 'Hello Button',
-  },
-});
+storiesOf('Button', module)
+  .add('Overview', () => ({
+    moduleMetadata: {
+      declarations: [ButtonComponent],
+    },
+    template: `
+        <div style="
+            display: flex;
+            justify-content: start;
+            ">
+          <e9-button class='margin-component' value='Standard' (onClick)="${displayClick()}"></e9-button>
+          <e9-button class='margin-component' value='Disable' disabled="true" (onClick)="${displayClick()}"></e9-button>
+        </div>
+    `,
+  }));
