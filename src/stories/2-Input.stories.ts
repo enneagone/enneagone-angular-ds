@@ -4,7 +4,6 @@ import { linkTo } from '@storybook/addon-links';
 import { InputComponent } from '../../projects/enneagone-angular-ds/src/lib/input/input.component';
 import {storiesOf} from '@storybook/angular';
 
-const inputValue = '';
 
 export default {
   title: 'Input',
@@ -16,5 +15,15 @@ storiesOf('Input', module)
     moduleMetadata: {
       declarations: [InputComponent],
     },
-    template: `<e9-input value='${inputValue}'>`,
+    template: `
+        <div style="
+            display: flex;
+            justify-content: start;
+         ">
+            <e9-input class='margin-component' value=''></e9-input>
+            <e9-input class='margin-component' value='disable' disabled='true'></e9-input>
+            <e9-input class='margin-component' value='' placeholder='placeholder'></e9-input>
+            <e9-input class='margin-component' value='readonly' readOnly='true'></e9-input>
+         </div>
+    `,
   }));
