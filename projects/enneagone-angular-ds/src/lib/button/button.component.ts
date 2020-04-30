@@ -14,6 +14,8 @@ export class ButtonComponent implements OnInit {
 
   constructor() {
     this.disabled = false;
+    // TODO: Set up les couleurs par defaut sur la lib
+    this.color = '#7C72A0';
   }
   ngOnInit(): void {
   }

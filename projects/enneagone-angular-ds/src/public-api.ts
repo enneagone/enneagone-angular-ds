@@ -5,3 +5,4 @@
 export * from './lib/enneagone-angular-ds.module';
 export * from './lib/button/button.component';
 export * from './lib/input/input.component';
+export * from  './lib/icon/icon.component';
