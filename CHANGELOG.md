@@ -1,3 +1,14 @@
+# [v1.3.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.2.0...v1.3.0) (2020-05-04)
+
+## ✨ New Features
+
+- [`4fd51dc`](https://github.com/enneagone/enneagone-angular-ds/commit/4fd51dc)  implement new button 
+
+## 🐛 Bug Fixes
+
+- [`c276c0d`](https://github.com/enneagone/enneagone-angular-ds/commit/c276c0d)  linter 
+- [`09394b9`](https://github.com/enneagone/enneagone-angular-ds/commit/09394b9)  remove on before output
+
 # [v1.2.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.1.6...v1.2.0) (2020-04-26)
 
 ## ✨ New Features
