@@ -36,16 +36,59 @@ yarn storybook
 
 #### Generate a new angular component:  
 
+Create the component :
 ```
 ng generate component name-of-your-component --project=enneagone-angular-ds --skip-import 
 ```
 
+Create module to export the componant:
+
+```
+ng generate module name-of-your-component
+```
+
+Export component from Module
+
+```
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { name-of-your-component} from './name-of-your-component.component';
+
+@NgModule({
+  declarations: [name-of-your-component],
+  imports: [
+    CommonModule
+  ],
+  exports: [name-of-your-component]
+})
+export class name-of-your-componentModule { }
+
+```
+
 More informations: https://angular.io/cli/generate
 
-Add it to the public-api.ts:
+Add component and module to the public-api.ts:
 ```
 export * from './lib/name-of-folder-component/name-of-your-component.component';
+export * from './lib/name-of-folder-component/name-of-your-component.module';
 ```
+
+Add your module in global decorator of storybook(preview.js)
+```
+addDecorator(
+  moduleMetadata({
+    imports: [
+      NotifierStoryBookModule,
+      ButtonModule,
+      InputModule,
+      IconModule,
+      name-of-your-componentModule
+    ],
+  })
+);
+```
+
+**We need command to do this** 😋
 
 #### Integrate it to Storybook:
 

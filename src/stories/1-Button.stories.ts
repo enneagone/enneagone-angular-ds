@@ -1,5 +1,4 @@
 import { action } from '@storybook/addon-actions';
-import {ButtonComponent} from '../../projects/enneagone-angular-ds/src/public-api';
 import {storiesOf} from '@storybook/angular';
 
 function displayClick() {
@@ -8,14 +7,10 @@ function displayClick() {
 
 export default {
   title: 'Button',
-  component: ButtonComponent,
 };
 
 storiesOf('Button', module)
   .add('Overview', () => ({
-    moduleMetadata: {
-      declarations: [ButtonComponent],
-    },
     template: `
         <div style="
             display: flex;
