@@ -12,7 +12,7 @@
     "release": "semantic-release",
     "pack_lib": "cd dist/enneagone-angular-dsb && yarn pack",
     "storybook": "start-storybook -p 6006 -s ./src/app/style",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./src/app/style"
   },
   "private": true,
   "dependencies": {
