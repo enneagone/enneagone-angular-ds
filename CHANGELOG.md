@@ -1,3 +1,9 @@
+# [v1.3.2](https://github.com/enneagone/enneagone-angular-ds/compare/v1.3.1...v1.3.2) (2020-05-05)
+
+## 🐛 Bug Fixes
+
+- [`c678da5`](https://github.com/enneagone/enneagone-angular-ds/commit/c678da5)  fix strorybook build command
+
 # [v1.3.1](https://github.com/enneagone/enneagone-angular-ds/compare/v1.3.0...v1.3.1) (2020-05-05)
 
 ## 🐛 Bug Fixes
