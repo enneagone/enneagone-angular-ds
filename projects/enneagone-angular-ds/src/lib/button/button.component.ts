@@ -5,7 +5,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   @Input() value: string;
   @Input() color: string;
   @Input() disabled: boolean;
@@ -17,7 +17,4 @@ export class ButtonComponent implements OnInit {
     // TODO: Set up les couleurs par defaut sur la lib
     this.color = '#7C72A0';
   }
-  ngOnInit(): void {
-  }
-
 }
