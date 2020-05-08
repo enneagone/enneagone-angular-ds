@@ -5,7 +5,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent{
+export class ButtonComponent {
   @Input() value: string;
   @Input() color: string;
   @Input() disabled: boolean;
