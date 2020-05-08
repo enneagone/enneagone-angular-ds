@@ -1,18 +1,10 @@
-import {storiesOf} from '@storybook/angular';
+import {OverviewIconComponent} from '../app/components/overview-icon/overview-icon.component';
 
 export default {
   title: 'Icon',
+  excludeStories: /.*Data$/,
 };
 
-storiesOf('Icon', module)
-  .add('Overview', () => ({
-    template: `
-        <div style="
-            display: flex;
-            justify-content: start;
-         ">
-            <e9-icon name="fa fa-heart" color="#e00000"></e9-icon>
-            <e9-icon name="fa fa-home" color="#7C72A0"></e9-icon>
-         </div>
-    `,
-  }));
+export const Overview = () => ({
+  component: OverviewIconComponent
+});

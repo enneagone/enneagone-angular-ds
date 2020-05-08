@@ -1,17 +1,10 @@
-import {storiesOf} from '@storybook/angular';
+import {NotifierStoryBookComponent} from '../app/components/notifier-story-book/notifier-story-book.component';
 
 export default {
   title: 'Notification',
+  excludeStories: /.*Data$/,
 };
 
-storiesOf('Notification', module)
-  .add('Overview', () => ({
-    template: `
-        <div style="
-            display: flex;
-            justify-content: start;
-         ">
-            <e9-notifier-story-book></e9-notifier-story-book>
-         </div>
-    `,
-  }));
+export const Overview = () => ({
+  component: NotifierStoryBookComponent
+});

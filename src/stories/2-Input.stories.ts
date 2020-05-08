@@ -1,21 +1,10 @@
-import {storiesOf} from '@storybook/angular';
-
+import {OverviewInputComponent} from '../app/components/overview-input/overview-input.component';
 
 export default {
   title: 'Input',
+  excludeStories: /.*Data$/,
 };
 
-storiesOf('Input', module)
-  .add('Overview', () => ({
-    template: `
-        <div style="
-            display: flex;
-            justify-content: start;
-         ">
-            <e9-input class='margin-component' value=''></e9-input>
-            <e9-input class='margin-component' value='disable' disabled='true'></e9-input>
-            <e9-input class='margin-component' value='' placeholder='placeholder'></e9-input>
-            <e9-input class='margin-component' value='readonly' readOnly='true'></e9-input>
-         </div>
-    `,
-  }));
+export const Overview = () => ({
+  component: OverviewInputComponent
+});

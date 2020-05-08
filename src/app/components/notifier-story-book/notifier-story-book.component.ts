@@ -13,7 +13,6 @@ export class NotifierStoryBookComponent{
     private notifier: NotifyService
   ) { }
   submitMessage() {
-    console.log('test');
     let messageType: number = null;
     messageType = this.messageType;
     this.notifier.notify(

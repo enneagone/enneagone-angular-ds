@@ -1,20 +1,19 @@
-import {addDecorator, configure, moduleMetadata} from '@storybook/angular';
-import { NotifierStoryBookModule } from '../src/app/components/notifier-story-book/notifier-story-book.module';
+import {addDecorator, moduleMetadata} from '@storybook/angular';
+
 import {
   ButtonModule,
   InputModule,
-  IconModule
+  IconModule,
+  NotifyModule
 } from "../projects/enneagone-angular-ds/src/public-api";
-
-configure(require.context('../src/stories', true, /\.stories\.ts$/), module);
 
 addDecorator(
   moduleMetadata({
     imports: [
-      NotifierStoryBookModule,
       ButtonModule,
       InputModule,
-      IconModule
+      IconModule,
+      NotifyModule
     ],
   })
 );
