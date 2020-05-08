@@ -10,6 +10,5 @@ export class Notifier {
 
   public add(notification: Notification): void {
     this.notifications.unshift(notification);
-    console.log(this.notifications);
   }
 }
