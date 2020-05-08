@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
-import {OverviewButtonComponent} from './overview-button.component';
+import {OverviewIconComponent} from './overview-icon.component';
 
 @NgModule({
   declarations: [
-    OverviewButtonComponent
+    OverviewIconComponent
   ],
   exports: [
-    OverviewButtonComponent
+    OverviewIconComponent
   ]
 })
 export class OverviewButtonModule { }

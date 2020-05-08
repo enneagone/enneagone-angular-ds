@@ -7,7 +7,7 @@ export default {
 };
 
 export const actionsData = {
-  onClickTask: action('button clicked')
+  onClickTask: action('Button clicked')
 };
 
 export const Overview = () => ({

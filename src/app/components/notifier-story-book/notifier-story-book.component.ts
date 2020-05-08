@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {NotifyService} from '../../../../projects/enneagone-angular-ds/src/public-api';
 
 @Component({
@@ -6,7 +6,10 @@ import {NotifyService} from '../../../../projects/enneagone-angular-ds/src/publi
   templateUrl: './notifier-story-book.component.html',
   styleUrls: ['./notifier-story-book.component.css'],
 })
-export class NotifierStoryBookComponent{
+export class NotifierStoryBookComponent {
+
+  @Output() notifEmitted: EventEmitter<any> = new EventEmitter();
+
   messageText = 'This is a demo notification!';
   messageType = 1;
   constructor(
@@ -19,6 +22,7 @@ export class NotifierStoryBookComponent{
       this.messageText,
       messageType,
     );
+    this.notifEmitted.emit();
   }
 
 }
