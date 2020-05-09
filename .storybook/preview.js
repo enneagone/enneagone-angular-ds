@@ -4,7 +4,8 @@ import {
   ButtonModule,
   InputModule,
   IconModule,
-  NotifyModule
+  NotifyModule,
+  DialogModule
 } from "../projects/enneagone-angular-ds/src/public-api";
 
 addDecorator(
@@ -13,7 +14,8 @@ addDecorator(
       ButtonModule,
       InputModule,
       IconModule,
-      NotifyModule
+      NotifyModule,
+      DialogModule
     ],
   })
 );
