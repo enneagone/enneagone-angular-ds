@@ -12,8 +12,8 @@ export class DialogComponent implements OnInit {
   @Output() accept: EventEmitter<any> = new EventEmitter();
   @Output() deny: EventEmitter<any> = new EventEmitter();
   // TODO: Ajouter règle i18n
-  private confirmMsg = 'Valider';
-  private denyMsg = 'Annuler';
+  public confirmMsg = 'Valider';
+  public denyMsg = 'Annuler';
   ngOnInit(): void {
     this.display = false;
   }
