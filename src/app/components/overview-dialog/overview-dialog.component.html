@@ -1,0 +1,14 @@
+<e9-button
+  value='Demande de confirmation'
+  (click)="diplayDialog = true"
+>
+  Notifier
+</e9-button>
+<e9-dialog
+  [display]="diplayDialog"
+  [title]="title"
+  [message]="message"
+  (accept)="accepted()"
+  (deny)="denied()"
+>
+</e9-dialog>

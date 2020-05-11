@@ -6,6 +6,10 @@ import {NotifierStoryBookComponent} from './notifier-story-book.component';
   declarations: [
     NotifierStoryBookComponent
   ],
+  imports: [
+    NotifyModule,
+    ButtonModule
+  ],
   exports: [
     NotifierStoryBookComponent
   ]

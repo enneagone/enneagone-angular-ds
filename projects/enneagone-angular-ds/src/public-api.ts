@@ -11,4 +11,6 @@ export * from './lib/icon/icon.module';
 export * from './lib/notify/notify.service';
 export * from './lib/notify/notify.component';
 export * from './lib/notify/notify.module';
+export * from './lib/dialog/dialog.component';
+export * from './lib/dialog/dialog.module';
 

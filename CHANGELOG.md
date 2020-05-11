@@ -1,3 +1,17 @@
+# [v1.4.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.3.2...v1.4.0) (2020-05-09)
+
+## ✨ New Features
+
+- [`3aa0c58`](https://github.com/enneagone/enneagone-angular-ds/commit/3aa0c58)  implement dialog component 
+
+## 🐛 Bug Fixes
+
+- [`a1ce210`](https://github.com/enneagone/enneagone-angular-ds/commit/a1ce210)  fix addon 
+- [`44068b4`](https://github.com/enneagone/enneagone-angular-ds/commit/44068b4)  stories implementation 
+- [`c15f0b0`](https://github.com/enneagone/enneagone-angular-ds/commit/c15f0b0)  module export in storybook 
+- [`e4e473a`](https://github.com/enneagone/enneagone-angular-ds/commit/e4e473a)  fix linter 
+- [`cb9dbfd`](https://github.com/enneagone/enneagone-angular-ds/commit/cb9dbfd)  fix dialog properties
+
 # [v1.3.2](https://github.com/enneagone/enneagone-angular-ds/compare/v1.3.1...v1.3.2) (2020-05-05)
 
 ## 🐛 Bug Fixes
