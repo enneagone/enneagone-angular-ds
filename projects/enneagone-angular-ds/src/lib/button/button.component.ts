@@ -19,12 +19,12 @@ export class ButtonComponent implements OnInit {
       case 'xs':
         this.fontSize = '0.8em';
         this.width = '4.5em';
-        this.height = '2em';
+        this.height = '1.9em';
         break;
       case 'sm':
         this.fontSize = '0.9em';
         this.width = '4.9em';
-        this.height = '2.3em';
+        this.height = '2.1em';
         break;
       case 'md':
         this.fontSize = '1em';
@@ -34,12 +34,12 @@ export class ButtonComponent implements OnInit {
       case 'lg':
         this.fontSize = '1.1em';
         this.width = '7em';
-        this.height = '2.6em';
+        this.height = '2.4em';
         break;
       case 'xl':
         this.fontSize = '1.3em';
         this.width = '9em';
-        this.height = '3em';
+        this.height = '2.5em';
         break;
     }
   }
