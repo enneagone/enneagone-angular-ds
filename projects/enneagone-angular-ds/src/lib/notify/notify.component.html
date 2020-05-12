@@ -1,9 +1,7 @@
 <div *ngIf="notifier">
   <ng-container *ngFor="let notification of notifier.notifications.reverse()" >
     <div>
-      <div>
-        <button (click)="notifier.destroy(notification)">
-        </button>
+      <div [class]="notification.type == 1 ? 'accept-type' : 'fail-type'">
         <span>{{notification.message}}</span>
       </div>
     </div>
