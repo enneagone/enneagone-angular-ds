@@ -1,5 +1,6 @@
 import {action} from '@storybook/addon-actions';
 import {OverviewButtonComponent} from '../app/components/overview-button/overview-button.component';
+import {SizingButtonComponent} from '../app/components/sizing-button/sizing-button.component';
 import {ButtonComponent} from '../../projects/enneagone-angular-ds/src/lib/button/button.component';
 import {boolean, color, select, text, withKnobs} from '@storybook/addon-knobs';
 
@@ -15,6 +16,13 @@ export const actionsData = {
 
 export const Overview = () => ({
   component: OverviewButtonComponent,
+  props: {
+    btnClick: actionsData.onClickTask
+  }
+});
+
+export const Size = () => ({
+  component: SizingButtonComponent,
   props: {
     btnClick: actionsData.onClickTask
   }
