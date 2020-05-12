@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {NotifyService} from '../../../../projects/enneagone-angular-ds/src/public-api';
+import {number} from '@storybook/addon-knobs';
 
 @Component({
   selector: 'e9-notifier-story-book',
@@ -10,17 +11,16 @@ export class NotifierStoryBookComponent {
 
   @Output() notifEmitted: EventEmitter<any> = new EventEmitter();
 
-  messageText = 'This is a demo notification!';
-  messageType = 1;
+  messageSuccess = 'Success notification !';
+  messageFail = 'Failed notification !';
   constructor(
     private notifier: NotifyService
   ) { }
-  submitMessage() {
-    let messageType: number = null;
-    messageType = this.messageType;
+  submitMessage(type: number) {
+    const message = type === 1 ? this.messageSuccess : this.messageFail;
     this.notifier.notify(
-      this.messageText,
-      messageType,
+      message,
+      type,
     );
     this.notifEmitted.emit();
   }
