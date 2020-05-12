@@ -13,4 +13,6 @@ export * from './lib/notify/notify.component';
 export * from './lib/notify/notify.module';
 export * from './lib/dialog/dialog.component';
 export * from './lib/dialog/dialog.module';
+export * from './lib/avatar/avatar.module';
+export * from './lib/avatar/avatar.component';
 
