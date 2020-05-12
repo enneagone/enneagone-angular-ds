@@ -44,11 +44,10 @@ export class ButtonComponent implements OnInit {
     }
   }
   @Output() btnClick: EventEmitter<any> = new EventEmitter();
-  private width: string;
-  private height: string;
-  private fontSize: string;
-  private border = '0.05em solid';
-  private test = 'black';
+  public width: string;
+  public height: string;
+  public fontSize: string;
+  public border = '0.05em solid';
   constructor() {
     this.type = 'button';
     this.size = 'md';
