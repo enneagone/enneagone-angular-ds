@@ -1,8 +1,13 @@
 <button
   [disabled]="disabled"
   (click)="btnClick.emit($event)"
-  [style.background-color]="color"
-  [style.color]="textColor"
+  [style.background-color]="outlined==true ? '#FFFFFF' : color"
+  [style.color]="outlined==true ? color : textColor"
+  [style.width]="width"
+  [style.height]="height"
+  [style.font-size]="fontSize"
+  [style.border-color]="outlined==true ? color : disabled==true ? 'unset' : borderColor"
+  [style.border-style]="(borderColor==null && outlined==false) ? 'unset' : 'solid'"
 >
   {{value}}
 </button>
