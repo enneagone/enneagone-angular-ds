@@ -14,40 +14,31 @@ export class ButtonComponent implements OnInit {
   @Input() outlined = false;
   @Input() type: 'button' | 'submit' | 'a';
   @Input() borderColor: string;
+  @Input() maxWidth: string;
+  @Input() width: string;
   @Input() set size(value: ('xs' | 'sm' | 'md' | 'lg' | 'xl')) {
     switch (value) {
       case 'xs':
-        this.fontSize = '0.8em';
-        this.width = '4.5em';
-        this.height = '1.9em';
+        this.fontSize = '0.6em';
         break;
       case 'sm':
-        this.fontSize = '0.9em';
-        this.width = '4.9em';
-        this.height = '2.1em';
+        this.fontSize = '0.8em';
         break;
       case 'md':
         this.fontSize = '1em';
-        this.width = '6em';
-        this.height = '2.2em';
         break;
       case 'lg':
-        this.fontSize = '1.1em';
-        this.width = '7em';
-        this.height = '2.4em';
+        this.fontSize = '1.2em';
         break;
       case 'xl':
-        this.fontSize = '1.3em';
-        this.width = '9em';
-        this.height = '2.5em';
+        this.fontSize = '1.5em';
         break;
     }
   }
   @Output() btnClick: EventEmitter<any> = new EventEmitter();
-  public width: string;
-  public height: string;
-  public fontSize: string;
   public border = '0.05em solid';
+  public padding = '4px 8px 4px 8px';
+  public fontSize: string;
   constructor() {
     this.type = 'button';
     this.size = 'md';

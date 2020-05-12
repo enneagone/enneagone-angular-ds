@@ -2,7 +2,7 @@ import {action} from '@storybook/addon-actions';
 import {OverviewButtonComponent} from '../app/components/overview-button/overview-button.component';
 import {SizingButtonComponent} from '../app/components/sizing-button/sizing-button.component';
 import {ButtonComponent} from '../../projects/enneagone-angular-ds/src/lib/button/button.component';
-import {boolean, color, select, text, withKnobs} from '@storybook/addon-knobs';
+import {boolean, color, select, text, number, withKnobs} from '@storybook/addon-knobs';
 
 export default {
   title: 'Button',
@@ -38,6 +38,8 @@ export const Custom = () => ({
     outlined: boolean('outlined', false),
     type: select('type', ['a', 'button', 'submit'], 'button'),
     size: select('size', ['xs', 'sm', 'md', 'lg', 'xl'], 'md'),
+    width: number('width', null) + 'px',
+    maxWidth: number('maxWidth', null) + 'px',
     btnClick: actionsData.onClickTask
   }
 });

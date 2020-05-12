@@ -7,5 +7,7 @@
     [placeholder]="placeholder"
     [readOnly]="readOnly"
     [required]="required"
+    [style.border-color]="color"
+    [style.background-color]="filled==false ? 'unset' : color"
   />
 </label>

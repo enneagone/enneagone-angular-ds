@@ -9,14 +9,12 @@ export class InputComponent implements OnInit {
   @Input() value: string;
   @Input() label: string;
   @Input() placeholder: string;
-  @Input() disabled: boolean;
-  @Input() readOnly: boolean;
-  @Input() required: boolean;
+  @Input() disabled = false;
+  @Input() readOnly = false;
+  @Input() required = false;
+  @Input() filled = false;
+  @Input() color = '#E0E0E0';
   constructor() {
-    this.disabled = false;
-    this.readOnly = false;
-    this.required = false;
-    this.placeholder = '';
   }
 
   ngOnInit(): void {
