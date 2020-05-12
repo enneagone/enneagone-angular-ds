@@ -11,8 +11,8 @@
     "e2e": "ng e2e",
     "release": "semantic-release",
     "pack_lib": "cd dist/enneagone-angular-dsb && yarn pack",
-    "storybook": "start-storybook -p 6006 -s ./src/app/style",
-    "build-storybook": "build-storybook -s ./src/app/style"
+    "storybook": "start-storybook -p 6006 -s src/app/style,src/app/assets",
+    "build-storybook": "build-storybook -s src/app/style,src/app/assets"
   },
   "private": true,
   "dependencies": {
