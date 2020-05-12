@@ -25,9 +25,11 @@ export const Custom = () => ({
   props: {
     value: text('value', 'Value'),
     color: color( 'color', '#7C72A0'),
+    borderColor: color( 'borderColor', 'white'),
     textColor: color('textColor', 'white'),
-    disable: boolean('disable', false),
+    outlined: boolean('outlined', false),
     type: select('type', ['a', 'button', 'submit'], 'button'),
+    size: select('size', ['xs', 'sm', 'md', 'lg', 'xl'], 'md'),
     btnClick: actionsData.onClickTask
   }
 });

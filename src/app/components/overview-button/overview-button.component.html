@@ -1,6 +1,8 @@
 <div style="display: flex;justify-content: start;">
   <e9-button class='margin-component' value='Standard' (btnClick)="btnClick.next()"></e9-button>
-  <e9-button class='margin-component' value='Disable' disabled="true" (btnClick)="btnClick.next()"></e9-button>
+  <e9-button class='margin-component' value='Disable' [disabled]="true" (btnClick)="btnClick.next()"></e9-button>
   <e9-button class='margin-component' value='Cyan' color="#00FFFF" (btnClick)="btnClick.next()"></e9-button>
-  <e9-button class='margin-component' value='Orange' color="#FF8C00" (btnClick)="btnClick.next()"></e9-button>
+  <e9-button class='margin-component' value='Outlined' [outlined]="true" color="#FF8C00" (btnClick)="btnClick.next()"></e9-button>
+  <e9-button class='margin-component' value='Text color' color="#40C25F" textColor="black" (btnClick)="btnClick.next()"></e9-button>
+  <e9-button class='margin-component' value='Border Color' color="#24A397" borderColor="#236b63" (btnClick)="btnClick.next()"></e9-button>
 </div>
