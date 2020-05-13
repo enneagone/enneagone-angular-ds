@@ -6,16 +6,26 @@ button {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 3px;
   border:0.05em solid;
   word-wrap: break-word;
+
 }
 
 button:hover {
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 100px 100px rgba(70, 70, 70, 0.1);
 }
 
 button:disabled{
   background-color: #c4c4c4 !important;
   cursor: not-allowed;
+}
+
+.icon-left{
+  margin: 0.2em 8px 0 0;
+  float: left;
+}
+
+.icon-right{
+  margin: 0.2em 0 0 8px;
+  float: right;
 }

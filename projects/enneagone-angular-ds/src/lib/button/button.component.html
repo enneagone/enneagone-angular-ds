@@ -5,10 +5,23 @@
   [style.color]="outlined==true ? color : textColor"
   [style.max-width]="maxWidth"
   [style.width]="width"
+  [style.height]="icon!=null ? width : 'unset'"
   [style.padding]="padding"
   [style.font-size]="fontSize"
+  [style.font-weight]="bold==false ? 400 : 600"
   [style.border-color]="outlined==true ? color : disabled==true ? 'unset' : borderColor"
   [style.border-style]="(borderColor==null && outlined==false) ? 'unset' : 'solid'"
+  [style.border-radius]="icon!=null ? '50%' : '3px'"
 >
-  {{value}}
+  <i
+    *ngIf="icon!=null"
+    [class]="icon"
+  >
+  </i>
+  <i
+    *ngIf="iconLeft!=null || iconRight!=null"
+    [class]="iconLeft!=null ? 'icon-left '+iconLeft : 'icon-right '+iconRight"
+  >
+  </i>
+  <span *ngIf="icon==null">{{value}}</span>
 </button>

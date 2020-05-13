@@ -10,10 +10,11 @@
 
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   background: #fff;
   width: 30%;
   position: relative;
+  border-radius: 4px;
 }
 
 .popup h2 {
@@ -28,8 +29,14 @@
 
 .action{
   margin-top: 10px;
+  float: right;
 }
 
 .action e9-button{
   margin-left: 5px;
 }
+
+.action e9-button button{
+  font-weight: 700 !important;
+}
+

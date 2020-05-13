@@ -12,10 +12,14 @@ export class ButtonComponent implements OnInit {
   @Input() textColor = '#FFFFFF';
   @Input() disabled = false;
   @Input() outlined = false;
+  @Input() bold = false;
   @Input() type: 'button' | 'submit' | 'a';
   @Input() borderColor: string;
   @Input() maxWidth: string;
   @Input() width: string;
+  @Input() icon: string;
+  @Input() iconLeft: string;
+  @Input() iconRight: string;
   @Input() set size(value: ('xs' | 'sm' | 'md' | 'lg' | 'xl')) {
     switch (value) {
       case 'xs':
@@ -42,6 +46,10 @@ export class ButtonComponent implements OnInit {
   constructor() {
     this.type = 'button';
     this.size = 'md';
+    if (this.icon != null) {
+      this.iconLeft = null;
+      this.iconRight = null;
+    }
   }
   ngOnInit(): void {
     if (this.borderColor == null) {
