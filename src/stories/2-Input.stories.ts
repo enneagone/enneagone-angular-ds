@@ -29,5 +29,6 @@ export const Custom = () => ({
     required: boolean('required', false),
     filled: boolean('filled', false),
     color: color('color', '#E0E0E0'),
+    labelColor: color('labelColor', 'black'),
   }
 });

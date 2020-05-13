@@ -1,6 +1,6 @@
 :host {
   > div {
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: white;
     margin: 0 auto;
     box-sizing: border-box;
@@ -15,12 +15,12 @@
     justify-content: center;
     > div {
       max-width: 30rem;
-      width: 100%;
       z-index: 2001;
       margin: 0 auto;
       box-sizing: border-box;
       .accept-type {
         background: #40C25F;
+        box-shadow: 1px 1px 3px 1px rgba(200,200,200,1);
       }
       .fail-type {
         background: #d2172c;

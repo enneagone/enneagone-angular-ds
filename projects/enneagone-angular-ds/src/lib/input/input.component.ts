@@ -14,6 +14,7 @@ export class InputComponent implements OnInit {
   @Input() required = false;
   @Input() filled = false;
   @Input() color = '#E0E0E0';
+  @Input() labelColor = 'black';
   constructor() {
   }
 
