@@ -1,3 +1,9 @@
+# [v1.6.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.5.0...v1.6.0) (2020-05-25)
+
+## ✨ New Features
+
+- [`c1307ee`](https://github.com/enneagone/enneagone-angular-ds/commit/c1307ee)  Add input password
+
 # [v1.5.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.4.0...v1.5.0) (2020-05-25)
 
 ## ✨ New Features
