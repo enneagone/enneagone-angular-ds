@@ -15,7 +15,9 @@ export class InputComponent implements OnInit {
   @Input() filled = false;
   @Input() color = '#E0E0E0';
   @Input() labelColor = 'black';
+  @Input() type: 'password' | 'text' | 'number';
   constructor() {
+    this.type = 'text';
   }
 
   ngOnInit(): void {

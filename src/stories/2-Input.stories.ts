@@ -1,6 +1,6 @@
 import {OverviewInputComponent} from '../app/components/overview-input/overview-input.component';
 import {InputComponent} from '../../projects/enneagone-angular-ds/src/lib/input/input.component';
-import {boolean, color, text, withKnobs} from '@storybook/addon-knobs';
+import {boolean, color, select, text, withKnobs} from '@storybook/addon-knobs';
 import {action} from '@storybook/addon-actions';
 import {Input} from "@angular/core";
 
@@ -23,6 +23,7 @@ export const Custom = () => ({
   props: {
     value: '',
     label: text('label', 'Label'),
+    type: select('type', ['text', 'password', 'number'], 'text'),
     placeholder: text('placeholder', 'Placeholder'),
     disable: boolean('disable', false),
     readOnly: boolean('readOnly', false),
