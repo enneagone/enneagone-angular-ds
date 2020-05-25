@@ -1,3 +1,28 @@
+# [v1.5.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.4.0...v1.5.0) (2020-05-25)
+
+## ✨ New Features
+
+- [`57cf5b8`](https://github.com/enneagone/enneagone-angular-ds/commit/57cf5b8)  Implement knobs &amp; add source 
+- [`aec9b6d`](https://github.com/enneagone/enneagone-angular-ds/commit/aec9b6d)  Custom button 
+- [`8c60c0f`](https://github.com/enneagone/enneagone-angular-ds/commit/8c60c0f)  Add button sizing 
+- [`18787fa`](https://github.com/enneagone/enneagone-angular-ds/commit/18787fa)  Implement knobs &amp; add source 
+- [`500a130`](https://github.com/enneagone/enneagone-angular-ds/commit/500a130)  Custom button 
+- [`b6845ad`](https://github.com/enneagone/enneagone-angular-ds/commit/b6845ad)  Avatar 
+- [`8b8e6b0`](https://github.com/enneagone/enneagone-angular-ds/commit/8b8e6b0)  Add icon button &amp; work on css 
+
+## 🐛 Bug Fixes
+
+- [`7120f09`](https://github.com/enneagone/enneagone-angular-ds/commit/7120f09)  Change properties in public 
+- [`59bdd3c`](https://github.com/enneagone/enneagone-angular-ds/commit/59bdd3c)  Change properties in public 
+- [`36783ba`](https://github.com/enneagone/enneagone-angular-ds/commit/36783ba)  Fix notify type 
+
+## 💄 Style and UI updates
+- [`cc58f06`](https://github.com/enneagone/enneagone-angular-ds/commit/cc58f06)  Work on component style 
+
+## 🚑 Critical Hotfixes
+
+- [`1581ccc`](https://github.com/enneagone/enneagone-angular-ds/commit/1581ccc)  Add global module
+
 # [v1.4.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.3.2...v1.4.0) (2020-05-09)
 
 ## ✨ New Features
