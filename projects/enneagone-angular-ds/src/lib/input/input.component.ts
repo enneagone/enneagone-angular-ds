@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
-  @Input() value: string;
+  @Input() value = '';
   @Input() label = '';
   @Input() placeholder = '';
   @Input() disabled = false;
