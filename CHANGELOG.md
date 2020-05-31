@@ -1,3 +1,11 @@
+# [v1.6.1](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.0...v1.6.1) (2020-05-31)
+
+## 🐛 Bug Fixes
+
+- [`a85fbbe`](https://github.com/enneagone/enneagone-angular-ds/commit/a85fbbe)  Fix placeholder input 
+- [`0b89e3e`](https://github.com/enneagone/enneagone-angular-ds/commit/0b89e3e)  Fix linter 
+- [`6db076f`](https://github.com/enneagone/enneagone-angular-ds/commit/6db076f)  Fix linter
+
 # [v1.6.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.5.0...v1.6.0) (2020-05-25)
 
 ## ✨ New Features
