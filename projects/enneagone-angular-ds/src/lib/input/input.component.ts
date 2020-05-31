@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {NgModel} from '@angular/forms';
 
 @Component({
@@ -7,7 +7,8 @@ import {NgModel} from '@angular/forms';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
-  @Input() value = '';
+  @Output() ngValueChange: EventEmitter<any> = new EventEmitter();
+  @Input() value: NgModel;
   @Input() label = '';
   @Input() placeholder = '';
   @Input() disabled = false;
@@ -24,7 +25,7 @@ export class InputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onKey(event: any) {
-    this.value = event.target.value;
+  emitValueChange($event: any) {
+    this.ngValueChange.emit($event);
   }
 }

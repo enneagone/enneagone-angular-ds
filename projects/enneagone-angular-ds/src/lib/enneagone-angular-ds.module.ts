@@ -6,6 +6,7 @@ import { IconComponent } from './icon/icon.component';
 import { InputComponent } from './input/input.component';
 import { NotifyComponent } from './notify/notify.component';
 import {CommonModule} from '@angular/common';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import {CommonModule} from '@angular/common';
     InputComponent,
     NotifyComponent
   ],
-    imports: [
-        CommonModule
-    ],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
   exports: [
     ButtonComponent,
     AvatarComponent,

@@ -2,12 +2,13 @@
   {{label}}
   <input
     [type]="type"
-    [value]="value"
     [disabled]="disabled"
     [placeholder]="placeholder"
     [readOnly]="readOnly"
     [required]="required"
     [style.border-color]="color"
     [style.background-color]="filled==false ? 'unset' : color"
+    [(ngModel)]="value"
+    (ngModelChange)="emitValueChange($event)"
   />
 </label>
