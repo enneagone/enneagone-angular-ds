@@ -7,8 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class InputComponent implements OnInit {
   @Input() value: string;
-  @Input() label: string;
-  @Input() placeholder: string;
+  @Input() label: string = "";
+  @Input() placeholder: string = "";
   @Input() disabled = false;
   @Input() readOnly = false;
   @Input() required = false;
