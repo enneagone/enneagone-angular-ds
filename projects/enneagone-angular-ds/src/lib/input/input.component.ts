@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {NgModel} from '@angular/forms';
 
 @Component({
   selector: 'e9-input',
@@ -23,4 +24,7 @@ export class InputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onKey(event: any) {
+    this.value = event.target.value;
+  }
 }
