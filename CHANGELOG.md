@@ -1,3 +1,9 @@
+# [v1.6.2](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.1...v1.6.2) (2020-05-31)
+
+## 🐛 Bug Fixes
+
+- [`a8a13e0`](https://github.com/enneagone/enneagone-angular-ds/commit/a8a13e0)  Fix value input
+
 # [v1.6.1](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.0...v1.6.1) (2020-05-31)
 
 ## 🐛 Bug Fixes
