@@ -1,3 +1,11 @@
+# [v1.6.3](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.2...v1.6.3) (2020-05-31)
+
+## 🐛 Bug Fixes
+
+- [`f9f3a10`](https://github.com/enneagone/enneagone-angular-ds/commit/f9f3a10)  Update value of input on keyup 
+- [`658ce15`](https://github.com/enneagone/enneagone-angular-ds/commit/658ce15)  Add ngModel input 🐛 Add ngModel input 
+- [`569c6bd`](https://github.com/enneagone/enneagone-angular-ds/commit/569c6bd)  Fix linter
+
 # [v1.6.2](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.1...v1.6.2) (2020-05-31)
 
 ## 🐛 Bug Fixes
