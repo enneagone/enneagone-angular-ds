@@ -1,12 +1,12 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {NgModel} from '@angular/forms';
+import {ControlValueAccessor, NgModel} from '@angular/forms';
 
 @Component({
   selector: 'e9-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent implements OnInit {
+export class InputComponent implements OnInit, ControlValueAccessor {
   @Output() ngValueChange: EventEmitter<any> = new EventEmitter();
   @Input() value: NgModel;
   @Input() label = '';
