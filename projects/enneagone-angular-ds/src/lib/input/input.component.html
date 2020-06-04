@@ -9,6 +9,7 @@
     [style.border-color]="color"
     [style.background-color]="filled==false ? 'unset' : color"
     [(ngModel)]="value"
-    (ngModelChange)="emitValueChange($event)"
+    (ngModelChange)="emitValueChange({$event : $event})"
+    ngDefaultControl
   />
 </label>
