@@ -1,3 +1,14 @@
+# [v1.7.0](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.4...v1.7.0) (2020-06-04)
+
+## ✨ New Features
+
+- [`0f72503`](https://github.com/enneagone/enneagone-angular-ds/commit/0f72503)  Add ControlValueAccessor on input 
+
+## 🐛 Bug Fixes
+
+- [`b105340`](https://github.com/enneagone/enneagone-angular-ds/commit/b105340)  Fix input control value 
+- [`822a21c`](https://github.com/enneagone/enneagone-angular-ds/commit/822a21c)  Fix linter
+
 # [v1.6.4](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.3...v1.6.4) (2020-06-01)
 
 ## 💄 Style and UI updates
