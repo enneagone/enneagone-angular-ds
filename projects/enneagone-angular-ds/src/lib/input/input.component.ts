@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {ControlValueAccessor, DefaultValueAccessor, NgModel} from '@angular/forms';
-import {ReplaySubject} from "rxjs";
+import {ReplaySubject} from 'rxjs';
 
 @Component({
   selector: 'e9-input',
