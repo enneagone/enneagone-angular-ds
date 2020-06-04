@@ -1,3 +1,8 @@
+# [v1.6.4](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.3...v1.6.4) (2020-06-01)
+
+## 💄 Style and UI updates
+- [`c19e5d0`](https://github.com/enneagone/enneagone-angular-ds/commit/c19e5d0)  Change notif size
+
 # [v1.6.3](https://github.com/enneagone/enneagone-angular-ds/compare/v1.6.2...v1.6.3) (2020-05-31)
 
 ## 🐛 Bug Fixes
